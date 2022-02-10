@@ -34,12 +34,7 @@ namespace MapBuilder.App
 
         private string GetElevatorType(int floor)
         {
-            var result = "";
-            if (floor % 2 == 0)
-              result = "E1";
-            else
-              result = "E2";
-
+            var result = floor % 2 == 0 ? "E1" : "E2";
             return result;
         }
 
@@ -51,12 +46,9 @@ namespace MapBuilder.App
 
         private int GetTimeByStairs(int floor)
         {
-          var result = 0;
-
-          if(floor > _currentOfficeManagerPosition.Floor)
-            result = (floor - _currentOfficeManagerPosition.Floor) * 2;
-          else
-            result = (_currentOfficeManagerPosition.Floor - floor) * 2;
+          var result = floor > _currentOfficeManagerPosition.Floor ? 
+                      (floor - _currentOfficeManagerPosition.Floor) * 2 : 
+                      (_currentOfficeManagerPosition.Floor - floor) * 2;
 
           return result;
         }
@@ -68,10 +60,9 @@ namespace MapBuilder.App
           if(signature.Section != _currentOfficeManagerPosition.Section)
              result += 1;
 
-          if (signature.Floor > _currentOfficeManagerPosition.Floor)
-            result += (signature.Floor - _currentOfficeManagerPosition.Floor);
-          else
-            result += (_currentOfficeManagerPosition.Floor - signature.Floor);
+          result += signature.Floor > _currentOfficeManagerPosition.Floor ?
+                  (signature.Floor - _currentOfficeManagerPosition.Floor) :
+                  (_currentOfficeManagerPosition.Floor - signature.Floor);
 
           return result;
         }
