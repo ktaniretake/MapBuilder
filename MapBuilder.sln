@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapBuilder.App", "MapBuilder.App\MapBuilder.App.csproj", "{77ABACE2-5A17-4B17-AF91-00D45876FEE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapBuilder.Tests", "MapBuilder.Tests\MapBuilder.Tests.csproj", "{C60D14F7-6A2A-4507-B69C-1F16040DDBCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77ABACE2-5A17-4B17-AF91-00D45876FEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77ABACE2-5A17-4B17-AF91-00D45876FEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77ABACE2-5A17-4B17-AF91-00D45876FEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77ABACE2-5A17-4B17-AF91-00D45876FEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60D14F7-6A2A-4507-B69C-1F16040DDBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60D14F7-6A2A-4507-B69C-1F16040DDBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60D14F7-6A2A-4507-B69C-1F16040DDBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60D14F7-6A2A-4507-B69C-1F16040DDBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
